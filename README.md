@@ -5,9 +5,7 @@ Dự án gồm 2 phần chính:
 1. training/ → dùng để huấn luyện model (chạy local hoặc Kaggle)
 2. serving/ → dùng để triển khai API Flask + Ngrok
 
-==========================================</br>
 I. HUẤN LUYỆN MÔ HÌNH (TRAINING)
-==========================================
 
 ## Cách 1: Chạy Jupyter Notebook trên local
 
@@ -40,9 +38,7 @@ I. HUẤN LUYỆN MÔ HÌNH (TRAINING)
    phobert_sentiment/
    → vào thư mục: serving/models/phobert_sentiment/
 
-==========================================</br>
 II. TRIỂN KHAI MÔ HÌNH (SERVING)
-==========================================
 
 1. Di chuyển sang thư mục serving:
    cd serving
