@@ -1,10 +1,12 @@
 import torch
 import os
 import re
+from dotenv import load_dotenv
 
-# MODEL_PATH = "./models/phobert_sentiment"  # Path to the fine-tuned model directory
+load_dotenv()
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # thư mục 'serving'
-MODEL_PATH = os.path.join(BASE_DIR, "models", "phobert_sentiment")
+MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(BASE_DIR, "models", "phobert_sentiment"))
 
 URL_REGEX     = re.compile(r'(https?://[^\s]+|www\.[^\s]+)')
 EMAIL_REGEX   = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')

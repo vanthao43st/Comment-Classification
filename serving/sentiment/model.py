@@ -6,6 +6,7 @@ from .preprocess import basic_clean, word_segment_vietnamese
 
 class SentimentAnalyzer:
     def __init__(self, model_path=MODEL_PATH, device=DEVICE):
+        print(f"🔍 Loading model from {model_path}")
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
         self.model.to(device)

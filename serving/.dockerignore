@@ -1,0 +1,13 @@
+# loại các thứ không cần build
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
+
+# loại dữ liệu huấn luyện, notebook, tài liệu
+../training/
+../*.md
+*.ipynb
+
+# binary Windows
+cloudflared.exe
