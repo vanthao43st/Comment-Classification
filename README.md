@@ -50,17 +50,13 @@ II. TRIỂN KHAI MÔ HÌNH (SERVING)
 2. Cài các thư viện cần thiết:
    pip install -r requirements.txt
 
-3. Tạo file .env và thêm dòng:
-   NGROK_KEY=your_ngrok_auth_token_here
-
-4. Chạy Flask server:
+3. Chạy Flask server:
    python app.py
 
 Khi chạy xong sẽ thấy:
-Ngrok URL: https://xxxxx.ngrok.io
-Flask running on http://0.0.0.0:5000
+Running on http://127.0.0.1:5000
 
-=> Dán URL ngrok vào Postman hoặc trình duyệt để test API.
+=> Dán URL vào Postman hoặc trình duyệt để test API.
 
 ---
 
