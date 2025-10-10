@@ -101,13 +101,21 @@ Kết quả mẫu:</br>
 
   - Chạy notebook hoặc train_phobert.py trong thư mục training
   - Model tự lưu sang serving/models/phobert_sentiment/
+  - Download cloudflared từ https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe
+  - Đổi tên thành cloudflared.exe và copy vào thư mục serving
   - Sang serving và chạy python app.py
+  - Mở 1 terminal mới và run ".\serving\cloudflared.exe tunnel --url http://localhost:5000"
+  - Copy URL trong khung: https://abc/trycloudflare.com và thêm "/predict" => https://abc/trycloudflare.com/predict
 
 - Kaggle:
   - Chạy notebook Phobert_Finetune_Trainer.ipynb
   - Tải models.zip về, giải nén
   - Copy thư mục phobert_sentiment vào serving/models/
-  - Chạy python app.py
+  - Download cloudflared từ https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe
+  - Đổi tên thành cloudflared.exe và copy vào thư mục serving
+  - Sang serving và chạy python app.py
+  - Mở 1 terminal mới và run ".\serving\cloudflared.exe tunnel --url http://localhost:5000"
+  - Copy URL trong khung: https://abc/trycloudflare.com và thêm "/predict" => https://abc/trycloudflare.com/predict
 
 ---
 
